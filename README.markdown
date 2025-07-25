@@ -116,14 +116,6 @@ If predictions are inaccurate (e.g., low confidence like 13.73%):
 - Push to the branch: `git push origin feature-name`.
 - Submit a pull request.
 
-## License
-
-[Add your license here, e.g., MIT License. If none, specify that the project is for personal use only.]
-
-## Contact
-
-For questions or support, contact [your email or username].
-
 ## Acknowledgments
 
 - Inspired by deep learning research in medical imaging.
