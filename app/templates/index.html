@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nail Disease Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Nail Disease Detection</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#nail-disease-prediction" class="nav-link">Nail Disease Prediction</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="page-section">
+    <div class="content">
+      <h1>Welcome to Nail Disease Detection</h1>
+      <p>Upload an image of a nail to predict potential nail diseases using our AI-powered system.</p>
+      <a href="#nail-disease-prediction" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <section id="models" class="models-section">
+    <h2>Models Employed for the Project</h2>
+    <p>Our system leverages advanced transfer learning models for accurate nail disease detection. <a href="https://arxiv.org/abs/1409.1556" target="_blank" class="medical-link">Learn more about VGG16</a>.</p>
+    <div class="models-container">
+      <div class="model-card">
+        <div class="circle"></div>
+        <h3>VGG16</h3>
+        <p>VGG-16 is a 16-layer convolutional neural network used to classify nail images for disease detection.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="assets/medical-nail-image.jpg" alt="Medical Nail Analysis">
+      </div>
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>Our AI-powered system assists doctors by analyzing nail images to predict various systemic and dermatological diseases, streamlining the triage process and enabling faster, more accurate diagnoses. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6143458/" target="_blank" class="medical-link">Explore nail disease diagnostics</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nail-disease-prediction" class="nail-home-section">
+    <div class="nail-home-content">
+      <h2>Our Project on Nail Disease</h2>
+      <p>The Nail Image Processing System analyzes human nail images to detect various nail diseases by segmenting the nail and extracting features like color, shape, and texture. This system aids doctors in early disease diagnosis. <a href="https://www.aad.org/public/diseases/a-z/nail-fungus-types" target="_blank" class="medical-link">Learn about nail disease types</a>.</p>
+    </div>
+    <div class="upload-section">
+      <h2>Upload Nail Image</h2>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <label for="fileInput" class="custom-file-upload">Select or Drag Image Here</label>
+        <input type="file" id="fileInput" accept="image/*" class="hidden">
+        <button type="submit" class="predict-btn">Predict</button>
+      </form>
+      <div id="uploaded-image-container"></div>
+      <div id="prediction-result" class="result"></div>
+      <div id="spinner" class="spinner hidden"></div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Reach Us</h4>
+        <p>📍 Location</p>
+        <p>📞 Call +01 1234567890</p>
+        <p>✉️ demo@gmail.com</p>
+        <div class="social-icons">
+          <a href="#"><span>🌐</span></a>
+          <a href="#"><span>🐦</span></a>
+          <a href="#"><span>💼</span></a>
+          <a href="#"><span>📸</span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <p>Our AI system provides relief to overworked doctors by streamlining the triage process through nail disease detection.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#about">About</a></p>
+        <p><a href="#nail-disease-prediction">Nail</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <input type="email" placeholder="Enter your email">
+        <button class="subscribe-button">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
